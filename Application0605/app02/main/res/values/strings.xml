@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">app02</string>
+
+    <string name="default_str">Default String</string>
+
+    <string name="lipsum01">Nunc finibus risus aliquet augue venenatis tincidunt.</string>
+    <string name="lipsum02">Sed eget nisl sed elit faucibus pretium nec et justo.</string>
+    <string name="lipsum03">Donec accumsan felis vitae urna dictum tristique.</string>
+
+
+
+</resources>
