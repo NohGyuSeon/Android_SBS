@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">app02_login</string>
+
+    <!-- 오류 또는 알림 문구 -->
+    <string name="alert_no_account">You must enter an account!</string>
+    <string name="alert_no_password">You must enter a password!</string>
+
+
+</resources>
