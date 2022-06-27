@@ -1,2 +1,2 @@
-# Android_Practice
+# Android_SBS
 SBS 아카데미
