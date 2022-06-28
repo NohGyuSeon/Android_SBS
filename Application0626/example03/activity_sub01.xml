@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sub01Activity">
+
+    <EditText
+        android:id="@+id/sub01_edit_string"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:hint="Enter a string"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sub01_button_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/sub01_edit_string"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/sub01_edit_string"
+        app:layout_constraintTop_toBottomOf="@+id/sub01_edit_string" />
+</androidx.constraintlayout.widget.ConstraintLayout>
