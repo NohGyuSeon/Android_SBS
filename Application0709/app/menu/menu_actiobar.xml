@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- showAsAction 속성 -->
+    <!--  - 메뉴를 출력하기 위한 속성   -->
+    <!--  - 속성 값 -->
+    <!--     - always -->
+    <!--        : ActionBar 에 항상 표시 -->
+    <!--        : Icon 이 설정된 경우, Icon 만 표시 -->
+    <!--     - never -->
+    <!--        : ActionBar 에 표시하지 않는다. -->
+    <!--     - withText -->
+    <!--        : title 속성과 같이 표시 -->
+    <!--        : 출력할 공간 없다면 Icon 만 출력 -->
+    <!--     - ifRoom -->
+    <!--        : ActionBar 에 영역이 충분하면 표시 -->
+
+
+    <item
+        android:id="@+id/menu1"
+        android:icon="@drawable/ic_baseline_3d_rotation_24"
+        app:showAsAction="always"
+        android:title="MainMenu1"
+        />
+    <item
+        android:id="@+id/menu2"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="MainMenu2"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/menu3"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="MainMenu3"
+        />
+
+<!--   항목 내에 또 다른 메뉴를 둘 수 있다. -->
+    <item
+        android:id="@+id/menu_group1"
+        android:title="MenuGroup1"
+        >
+<!--    하위 목록으로 Menu 를 추가    -->
+        <menu>
+            <item android:title="SubMenu1"/>
+            <item android:title="SubMenu2"/>
+            <item android:title="SubMenu3"/>
+        </menu>
+
+    </item>
+</menu>
