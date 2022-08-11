@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="HOME"
+            android:icon="@drawable/ic_baseline_home_24"
+            />
+        <item
+            android:id="@+id/nav_trending"
+            android:title="Trending"
+            android:icon="@drawable/ic_baseline_trending_up_24"
+            />
+        <item
+            android:id="@+id/nav_latest"
+            android:title="Latest"
+            android:icon="@drawable/ic_baseline_watch_later_24"
+            />
+        <item
+            android:id="@+id/nav_highlight"
+            android:title="Highlight"
+            android:icon="@drawable/ic_baseline_highlight_24"
+            />
+    </group>
+
+
+    <item android:title="Other">
+        <!-- 하위 메뉴 -->
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="Setting"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+            <item
+                android:id="@+id/nav_help"
+                android:title="Help"
+                android:icon="@drawable/ic_baseline_help_24"/>
+        </menu>
+
+    </item>
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+<!--    app:tabTextAppearance="@style/tab_text_size"-->
+<!--    Tab 항목의 글자 스타일을 설정하기 위한 테마 -->
+<!--    themes > theme.xml 내에 새롭에 정의 -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/tab_text_size"
+        app:tabIndicatorGravity="stretch"
+        app:tabIndicatorColor="@color/indicatorColor"
+        app:tabSelectedTextColor="@color/selectedTabColor"
+        app:tabTextColor="@color/unselectedTabColor"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
