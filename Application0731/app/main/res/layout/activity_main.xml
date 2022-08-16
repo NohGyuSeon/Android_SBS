@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- NavigationView 를 상태바 아래까지 보여지게 하기 위해서는 -->
+<!--  1. ActionBar 를 제거하고 Toolbar 로 설정 -->
+<!--  2. DrawerLayout 과 NavigationView 에 fitsSystemWindows 속성의 값을 -->
+<!--     "true" 로 설정 -->
+<!--  3. theme.xml 파일에서 "windowDrawsSystemBarBackgrounds" 의 값을 true, -->
+<!--     "statusBarColor" 의 값을 반투명(#55000000)으로 설정-->
+
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+<!-- 화면에 보여질 Activity 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- NavigationView 는 ActionBar 위에 올라오지 못하기 때문에-->
+        <!-- ActionBar 를 없애고 개발자가 다루기 쉬운 Toolbar 로 대체-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="Toolbar"
+            app:titleTextColor="@color/white"/>
+
+    </LinearLayout>
+
+<!-- 사이드에서 나타나고 사라질 NavigationView -->
+<!-- 상태바까지 확장되도록 설정  -->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/include_nav_header"
+        app:menu="@menu/nav_side_menu"
+        android:fitsSystemWindows="true"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
