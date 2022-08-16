@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>loading_phrase</key>
+        <value>Fetching config...</value>
+    </entry>
+    <entry>
+        <key>app_service_checking</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>message_for_checking</key>
+        <value>서버를 점검 중입니다.</value>
+    </entry>
+    <entry>
+        <key>background_color</key>
+        <key>#FFBB86FC</key>
+    </entry>
+</defaultsMap>
